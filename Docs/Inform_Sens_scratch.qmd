@@ -1,0 +1,21 @@
+---
+title: "inform_sen_scratch"
+author: "Kat Le"
+format: html
+editor: visual
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(purrr)
+library(ggpubr)
+```
+
+```{r}
+source("../R/solarpv.R")
+solarpv
+
+# read in R formatted data
+load("../Data/sierraczosolar.rda")
+```
